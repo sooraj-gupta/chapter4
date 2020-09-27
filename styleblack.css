@@ -1,0 +1,151 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root{
+    
+    --black: #222;
+    --white: #FFF;
+}
+body,html{
+    line-height: 30px;
+    padding: 0px;
+    margin: 0;
+    font-family:'Roboto';
+    font-weight: 300;
+    scroll-behavior: smooth;
+    background-color: var(--black);
+    color: var(--white);
+    
+}
+div{
+    background-color: var(--black);
+    margin:0px;
+    padding;0;
+}
+center{
+    background-color: var(--black);
+}
+.typewriter p {
+    height: 50px;
+    padding-top: 25px;
+    width: 250px;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 2px solid var(--white); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 2px; /* Adjust as needed */
+    animation: 
+    typing 5s steps(10, end) infinite,
+    blink-caret 1s step-end infinite;
+    animation-delay: 1s;
+    background-color: var(--black);
+    
+}
+
+/* The typing effect */
+@keyframes typing {
+  0% { width: 0 }
+  15% { width: calc(85% ) }
+  30% { width: calc(85% ) }
+  31% { width: calc(100%) }
+  90% { width: calc(100% ) }
+  100% { width: 0 }
+  
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: var(--white); }
+}
+.spacer{
+    padding-bottom: 100px;
+    background-color: var(--black);
+}
+.button{
+    letter-spacing: 1px;
+    text-decoration: none;
+    background-color: rgba(#FFF,0);
+    padding: 7px;
+    margin:  10px 0px;
+    color: var(--white);
+    transition: 0.2s;
+    box-shadow: 2px 3px 10px #000; 
+    font-size: 20px;
+}
+.button:hover{
+    letter-spacing: 1px;
+    transition: 0.2s;
+    color: var(--white);
+    box-shadow: none;
+    cursor: pointer;
+}
+.button:active{
+    background-color: var(--white);
+    color:var(--black)
+}
+hr{
+    width: 100%;
+    border:none;
+    margin: 0;
+    padding 0;
+    background-color: var(--black);
+}
+.purple{
+    color: mediumpurple;
+}
+.purpleback{
+    background-color: #cbb2ff;
+    color:var(--white);
+    width:auto;
+    padding: 2px 6px;
+}
+
+.pink{
+    color: hotpink;
+}
+.pinkback{
+    background-color: #ffa2b2;
+    color:var(--black);
+    width:auto;
+    padding: 2px 6px;
+}
+
+.blue{
+    color:#0093ff;
+}
+.blueback{
+    background-color:#8ec7f2;
+    color:var(--black);
+    width:auto;
+    padding: 2px 6px;
+}
+
+.verticalpadding{
+    padding: 25px 0px;
+    display:inherit;
+}
+.big{
+    font-size: 35px;
+}
+.small{
+    font-size: 20px;
+    word-wrap: break-word;
+}
+.medium{
+    font-size: 25px;
+}
+.graph{
+    width:80vw;
+    max-width: 500px;
+    padding: 0px 0 40px 0;
+}
+
+@media (max-width:415px){
+    .small{
+        font-size: 17px;
+        word-wrap: break-word;
+    }
+}
+.bg{
+    background-color: var(--black);
+}
